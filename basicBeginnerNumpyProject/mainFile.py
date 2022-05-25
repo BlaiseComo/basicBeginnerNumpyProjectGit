@@ -17,12 +17,13 @@ def dataScraper(dataFile):
         importantList.append(i.split(","))
 
     return importantList
-
-
+    
 
 dataFile = open("Student Mental health.csv", "r")
 
 importantList = dataScraper(dataFile)
+
+dataFile.close()
 
 selectDepressionRates = []
 selectAnxietyRates = []
